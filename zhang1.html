@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>链接样式</title>
+  <style>
+    a{
+     font-size:10em;
+    }
+    a:link{
+      color:red;
+      background:pink;
+      text-decoration:none;
+
+      
+    }
+    a:visited{
+      color:blue;
+    }
+    a:hover{
+      color:red;
+    }
+    a:active{
+      color:green;
+    }
+    .c{
+      width: 100px;
+      height: 160px;
+      border: 1px solid #000;
+      position: relative;
+    }
+    .c .phone{
+      width:300px;
+      height: 300px;
+      background: url("http://ugc.qpic.cn/baikepic2/14054/20150212144038-1336829886.jpg/0") no-repeat;
+      position: absolute;
+      left:120px;
+      top:-70px;
+      opacity: 0;
+      transition:all 1s;
+    }
+    .c:hover .phone{
+      opacity: 2;
+    }
+   
+  </style>
+</head>
+<body>
+  <a href="http://baidu.com/">百度</a>
+  <div class="c">
+    <div class="phone"></div>
+  </div>
+</body>
+</html>
